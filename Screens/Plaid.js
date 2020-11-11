@@ -3,8 +3,9 @@ import { StyleSheet, Text, Button, TouchableOpacity } from 'react-native'
 import PlaidLink, { usePlaidEmitter } from 'react-native-plaid-link-sdk';
 import plaid from 'plaid'
 
+///This will be moved to client side///
 const client = new plaid.Client({
-    clientID: 'CID',
+    clientID: 'CLIENT-ID',
     secret: 'SECRET',
     env: plaid.environments.sandbox,
 });
@@ -23,6 +24,7 @@ const getToken = async () => {
     .catch(err => console.log('ERR', err))
     return tokenResponse.link_token
 }
+/////////Move to Client Side After Testing//////////
 
 const AppButton = ({onPress, title}) => (
   <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
