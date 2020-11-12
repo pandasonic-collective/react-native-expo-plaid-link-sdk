@@ -3,7 +3,7 @@ import { StyleSheet, Text, Button, TouchableOpacity } from 'react-native'
 import PlaidLink, { usePlaidEmitter } from 'react-native-plaid-link-sdk';
 import plaid from 'plaid'
 
-///This will be moved to client side///
+///This will be moved to server side///
 const client = new plaid.Client({
     clientID: 'CLIENT-ID',
     secret: 'SECRET',
